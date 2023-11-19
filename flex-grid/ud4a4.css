@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+#top_header {
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+#top_header img {
+  height: 100%;
+  width: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu div {
+  margin: 0 ;
+}
+
+/* ASIDE AND HEADER LINKS */
+.menu-element a,
+.menu2-element a {
+  text-decoration: none;
+  color: black;
+  padding-inline: 20px;
+}
+
+.menu-element a:hover,
+.menu2-element a:hover {
+  text-decoration: underline;
+  color: #f38d21;
+}
+
+/* BODY */
+
+main > div{
+  display: flex;
+}
+
+/* ASIDE */
+aside {
+  width: 20%;
+  padding: 10px;
+}
+
+.list-group ul li {
+  padding: 5px 5px 0 10px;
+}
+
+.list-group {
+  padding: 0px 30px 30px 30px;
+}
+
+/* PRODUCTS */
+section {
+  width: 80%;
+}
+
+#products-filter {
+  background-color: lightgray;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  text-align: left;
+}
+
+.product-name {
+  font-weight: bold;
+}
+.item-details{
+  display: flex;
+  flex-direction: column;
+}
+.item-details span{
+  margin: 0;
+}
+
+.image-container a img {
+  width: 100%;
+  height: auto;
+  padding: 0px 1px 0px 0px;
+  box-sizing: border-box;
+}
+
+#product-listing {
+  padding-right: 50px;
+  width: 100%;
+}
+#product-listing li{
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(auto-fill, minmax(230px, auto));
+  gap: 1px;
+
+}
+article {
+  width: 100%;
+}
+#load-more-products {
+  text-align: center;
+  padding: 20px;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 40px;
+  margin-bottom: 50px;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: lightgray;
+}
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 1000px) {
+  /* aside {
+    width: 100%;
+    padding: 10px;
+    position: static;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  article {
+    width: 49%;
+  }
+
+  .menu div {
+    position: static;
+    text-align: right;
+    padding: 20px;
+  }
+  .list-group {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+  }
+  nav {
+    text-align: center;
+  } */
+  aside {
+    width: 100%;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  main > div{
+    display: block;
+  }
+  #product-listing li{
+  
+    grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  
+  nav > ul {
+    display: flex;
+  }
+}
